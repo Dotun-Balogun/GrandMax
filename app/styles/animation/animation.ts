@@ -23,3 +23,17 @@ export const FadeUpVariant:Variants = {
     }
    },
 };
+
+
+
+export const HeroRecedeVariant:Variants = {
+  animate: {
+    scale: [1, 1.05, 1],
+    transition: {
+      duration: 12, // smooth and gradual
+      ease: 'easeInOut',
+      repeat: Infinity,
+      repeatType: 'mirror', // goes back and forth
+    },
+  },
+}

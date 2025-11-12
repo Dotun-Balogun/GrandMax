@@ -1,19 +1,28 @@
 'use client'
+
 import Image from 'next/image'
 import slide_1 from '@/app/assets/images/slide-3.jpg'
 import Header from '@/components/layout/Header'
-import { motion } from 'framer-motion'
+import { motion} from 'framer-motion'
 import { ContainerVariant, FadeUpVariant } from '@/app/styles/animation/animation'
+
+
 
 const Slide_1 = () => {
   return (
     <section className='relative h-[50vh] md:h-[70vh] lg:min-h-screen'>
-      <Image
-        src={slide_1}
-        alt='background image'
-        fill
-        priority
-      />
+      <motion.div
+        
+        className="absolute inset-0"
+      >
+        <Image
+          src={slide_1}
+          alt='background image'
+          fill
+          priority
+          className='object-cover'
+        />
+      </motion.div>
 
       <motion.div
         variants={ContainerVariant}
@@ -28,7 +37,7 @@ const Slide_1 = () => {
 
         <motion.div
           variants={ContainerVariant}
-          className='flex flex-col mt-20 md:mt-20 lg:mt-20'
+          className='flex flex-col mt-10 md:mt-20 lg:mt-20'
         >
           <motion.div variants={FadeUpVariant} className='border-b border-secondary'>
             <h1 className='text-[25px] md:text-[40px] lg:text-[100px] font-bold container px-4 mx-auto'>
