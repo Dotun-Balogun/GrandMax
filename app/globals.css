@@ -122,15 +122,12 @@
 
   }
 
-
 :root{
     --primary: oklch(0.62 0.24 25);  /* Converted from #fc4142 */
     --primary-foreground: oklch(0.985 0 0);  /* White */
     --secondary: oklch(0.18 0.02 246);  /* Converted from #1b222b */
     --secondary-foreground: oklch(0.985 0 0);  /* White */
   }
-
-
 
 }
 html{
@@ -154,7 +151,5 @@ input:focus,textarea:focus,select:focus {
             }
 
   @layer base{
-  
 
-  
 }
