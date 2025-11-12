@@ -46,7 +46,7 @@ const Slide_1 = () => {
           </motion.div>
 
           <motion.div variants={FadeUpVariant} className='container mx-auto'>
-            <p className='text-[20px] container px-4 lg:max-w-2xl md:leading-10'>
+            <p className=' text-[12px] md:text-[20px] container px-4 lg:max-w-2xl md:leading-10'>
               Grand Max delivers innovative designs and exceptional craftsmanship,
               creating timeless spaces that blend beauty, functionality, and lasting value.
             </p>
