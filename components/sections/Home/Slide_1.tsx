@@ -10,7 +10,7 @@ import { ContainerVariant, FadeUpVariant } from '@/app/styles/animation/animatio
 
 const Slide_1 = () => {
   return (
-    <section className='relative h-[50vh] md:h-[70vh] lg:min-h-screen'>
+    <section className='relative h-[50vh]  lg:min-h-screen'>
       <motion.div
         
         className="absolute inset-0"
@@ -37,16 +37,16 @@ const Slide_1 = () => {
 
         <motion.div
           variants={ContainerVariant}
-          className='flex flex-col mt-10 md:mt-20 lg:mt-20'
+          className='flex flex-col mt-10 md:mt-40 lg:mt-20'
         >
           <motion.div variants={FadeUpVariant} className='border-b border-secondary'>
-            <h1 className='text-[25px] md:text-[40px] lg:text-[100px] font-bold container px-4 mx-auto'>
+            <h1 className='text-[25px]  md:text-[100px] font-bold container px-4 mx-auto'>
               Grand Max
             </h1>
           </motion.div>
 
           <motion.div variants={FadeUpVariant} className='container mx-auto'>
-            <p className='text-[20px] container px-4 lg:max-w-2xl leading-10'>
+            <p className='text-[20px] container px-4 lg:max-w-2xl md:leading-10'>
               Grand Max delivers innovative designs and exceptional craftsmanship,
               creating timeless spaces that blend beauty, functionality, and lasting value.
             </p>

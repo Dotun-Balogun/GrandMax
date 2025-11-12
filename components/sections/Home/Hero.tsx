@@ -43,7 +43,7 @@ const Hero = () => {
         setApi={setApi}
         plugins={[plugin]}
         opts={{ loop: true }}
-        className="w-full h-[50vh] md:h-[70vh] lg:min-h-screen relative overflow-hidden"
+        className="w-full h-[50vh]  lg:min-h-screen relative overflow-hidden"
       >
         <CarouselContent>
           {slides.map((slide) => (

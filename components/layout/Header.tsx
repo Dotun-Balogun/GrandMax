@@ -52,7 +52,7 @@ const Header = () => {
                 <RiMenu5Fill size={30} />
               </button>
             </SheetTrigger>
-            <SheetContent className="w-[300px] sm:w-[400px] bg-primary px-4">
+            <SheetContent className="w-[300px] sm:w-[400px] bg-white px-4">
               <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
               
               <div className="flex flex-col gap-8 mt-8">

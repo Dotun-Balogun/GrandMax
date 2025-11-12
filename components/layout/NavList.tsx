@@ -140,11 +140,11 @@ const NavList = ({ isMobile = false, onLinkClick }: NavListProps) => {
               initial={{ y: 0, opacity: 1 }}
               whileHover={{ y: -2 }}
               key={menu.id} 
-              className={`relative w-full group text-secondary border-b lg:border-none border-b-secondary w-full ${isMobile ? 'w-full' : ''}`}
+              className={`relative w-full group text-secondary border-b border-secondary ${isActive ? 'text-white bg-primary lg:bg-white border-none p-2  text-white lg:text-secondary':'text-secondary'} lg:border-none border-b-secondary w-full ${isMobile ? 'w-full' : ''}`}
             >
               <Link 
                 href={menu.path}
-                className={`${isActive ? 'text-white lg:text-secondary':'text-secondary'} gap-1 transition-colors duration-300`}
+                className={`${isActive ? 'text-white  text-white lg:text-secondary':'text-secondary'} gap-1 transition-colors duration-300`}
                 onClick={handleLinkClick}
               >
                 {menu.icon && <menu.icon />}
@@ -153,7 +153,7 @@ const NavList = ({ isMobile = false, onLinkClick }: NavListProps) => {
               {/* Animated border bottom */}
               <span 
                 className={`
-                  absolute  right-full top-1/2 translate-y-1/2 h-[2px] bg-primary
+                  lg:absolute  lg:right-full lg:top-1/2 lg:translate-y-1/2 h-[2px] lg:bg-primary
                   transition-all duration-300 ease-out
                   ${isActive ? '  w-1/2  ' : ' group-hover:w-full'}
                 `}

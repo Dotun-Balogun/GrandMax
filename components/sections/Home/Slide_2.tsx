@@ -8,7 +8,7 @@ import { ContainerVariant, FadeUpVariant } from '@/app/styles/animation/animatio
 
 const Slide_2 = () => {
   return (
-    <section className='relative h-[50vh] md:h-[70vh] lg:min-h-screen'>
+    <section className='relative h-[50vh]  lg:min-h-screen'>
       <Image
         src={slide_2}
         alt='background image'
@@ -32,13 +32,13 @@ const Slide_2 = () => {
           className='flex flex-col mt-10 md:mt-20 lg:mt-20'
         >
           <motion.div variants={FadeUpVariant} className='border-b border-secondary'>
-            <h1 className='text-[25px] md:text-[40px] lg:text-[100px] font-bold container px-4 mx-auto'>
+            <h1 className='text-[25px] md:text-[100px] font-bold container px-4 mx-auto'>
               Fola
             </h1>
           </motion.div>
 
           <motion.div variants={FadeUpVariant} className='container mx-auto'>
-            <p className='text-[20px] container px-4 lg:max-w-2xl leading-10'>
+            <p className='text-[20px] container px-4 lg:max-w-2xl md:leading-10'>
               Fola delivers innovative designs and exceptional craftsmanship,
               creating timeless spaces that blend beauty, functionality, and lasting value.
             </p>
