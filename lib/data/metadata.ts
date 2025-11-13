@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 const siteConfig = {
   name: 'GrandMax Architecture',
   description: 'Award-winning architectural design and construction services. Transform your vision into stunning reality with innovative, sustainable designs.',
-  url: 'https://your-domain.vercel.app', 
+  url: 'https://grand-max.vercel.app', 
   ogImage: '/og-image.png',
   keywords: [
     'architecture',
