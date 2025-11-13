@@ -18,9 +18,9 @@ const Architectural_Company = () => {
 
         />
       </div>
-      <div className='lg:absolute left-0 top-50 lg:translate-x-3/4 lg:w-[748px] px-6 bg-white'>
-        <div className='px-4'>
-          <p className="text-[12px] text-center md:text-left text-gray-500">since 1992</p>
+      <div className='lg:absolute left-0 top-50 lg:translate-x-3/4 lg:w-[748px] px- py-4 bg-white'>
+        <div className='px-4 space-y-4'>
+          <p className="text-[14px] text-center md:text-left text-gray-500">since 1992</p>
           <h1 className='text-[32px] white-space-break lg:text-[42px] tracking-loose text-center  md:text-left font-bold'>
             A Creative
             <span className='border-b'>

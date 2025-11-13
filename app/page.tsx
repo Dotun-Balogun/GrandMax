@@ -1,5 +1,6 @@
 import Architectural_Company from '@/components/sections/Home/Architectural_Company'
 import Hero from '@/components/sections/Home/Hero'
+import RecentProjectShowcase from '@/components/sections/Home/RecentProjectShowcase'
 import Gap from '@/components/shared/Gap'
 
 const page = () => {
@@ -8,6 +9,8 @@ const page = () => {
       <Hero/>
       <Gap/>
       <Architectural_Company/>
+      <Gap/>
+      <RecentProjectShowcase/>
       </div>
   )
 }
