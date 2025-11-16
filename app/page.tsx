@@ -17,6 +17,7 @@ const page = () => {
       <BuildingGrid/>
       <Gap/>
       <WhatDoWeDo/>
+      <Gap/>
       </div>
   )
 }

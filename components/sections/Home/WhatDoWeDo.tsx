@@ -51,7 +51,7 @@ const WhatDoWeDo = () => {
             </div>
           </div>
           <div className='text-white text-3xl font-bold py-20'>
-            <div className="max-w-6xl mx-auto grid  gap-14 px-4">
+            <div className="max-w-6xl mx-auto grid  gap-14 ">
         {services.map((service) => (
           <ServiceCard key={service.id} item={service} />
         ))}

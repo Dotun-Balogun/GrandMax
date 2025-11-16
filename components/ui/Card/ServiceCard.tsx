@@ -14,7 +14,7 @@ const ServiceCard = ({ item }: Props) => {
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.97 }}
       transition={{ type: "spring", stiffness: 200, damping: 15 }}
-      className="flex flex-col items-start justify-center  text-center lg:center gap-3 max-w-sm"
+      className="flex flex-col lg:items-start items-center  text-center lg:text-left gap-3 max-w-sm"
     >
       {/* Icon */}
       <Image
