@@ -8,7 +8,7 @@ const BuildingGrid = () => {
   const rightColumnBuildings = buildingData.slice(3, 6); 
 
   return (
-    <div className='max-w-7xl mx-auto px-4 mt-20 '>
+    <section className='max-w-7xl mx-auto px-4 mt-20 '>
       {/* desktop grid */}
       <div className="hidden lg:grid grid-cols-2 place-items-center">
         <div className="max-w-[600px]">
@@ -101,7 +101,7 @@ const BuildingGrid = () => {
 
         </div>
 
-    </div>
+    </section>
   )
 }
 

@@ -2,6 +2,7 @@ import Architectural_Company from '@/components/sections/Home/Architectural_Comp
 import BuildingGrid from '@/components/sections/Home/BuildingGrid'
 import Hero from '@/components/sections/Home/Hero'
 import RecentProjectShowcase from '@/components/sections/Home/RecentProjectShowcase'
+import TestimonialSection from '@/components/sections/Home/TestimonialSection'
 import WhatDoWeDo from '@/components/sections/Home/WhatDoWeDo'
 import Gap from '@/components/shared/Gap'
 
@@ -18,6 +19,7 @@ const page = () => {
       <Gap/>
       <WhatDoWeDo/>
       <Gap/>
+      <TestimonialSection/>
       </div>
   )
 }
