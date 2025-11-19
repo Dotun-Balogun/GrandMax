@@ -13,12 +13,12 @@ import { testimonials } from "@/lib/data/testimonials";
 import bakcground from '@/app/assets/images/row-bg-1.jpg'
 
 const TestimonialSection = () => {
-  return ( 
-    <section className=" relative w-full ">
+  return (
+    <section className=" relative w-full mt-100  lg:mt-0 ">
         
-       <section className="absolute left-1/2 -translate-x-1/2 w-full flex flex-col lg:flex-row lg:px-10" >
+       <section className="absolute left-1/2  bottom-20 -translate-x-1/2 w-full flex flex-col lg:flex-row lg:px-10 z-10" >
       {/* LEFT RED SECTION */}
-      <div className=" bg-[#F44336] text-white flex flex-col justify-center md:py-6 px-10 py-20 lg:w-1/3 w-full">
+      <div className="  bg-[#F44336]   text-white flex flex-col justify-center md:py-6 px-10 py-20 lg:w-1/3 w-full">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-snug tracking-tight space-y-1 md:space-y-2">
           <span className="block">What</span>
           <span className="block">Our</span>
@@ -74,10 +74,12 @@ const TestimonialSection = () => {
     </section>
   
 
-      <div className="w-full h-50">
+      <div className=" relative w-full h-100 z-5">
                 <Image
                 src={bakcground}
                 alt="background image"
+                fill
+                className="bg-cover"
                 />
       </div>
     </section>

@@ -36,7 +36,7 @@ const Header = () => {
           />
         </Link>
         <div className=" hidden lg:flex flex-row items-center ">
-          <div className='hidden  lg:flex bg-white h-[60px] px-4  '>
+          <div className='hidden  lg:flex bg-white h-[60px] px-8  '>
           <NavList  onLinkClick={handleCloseMobileMenu} />   
            
         </div>
