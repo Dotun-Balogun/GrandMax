@@ -1,10 +1,13 @@
 import Architectural_Company from '@/components/sections/Home/Architectural_Company'
 import BuildingGrid from '@/components/sections/Home/BuildingGrid'
+import ContactSection from '@/components/sections/Home/ContactSection'
 import Hero from '@/components/sections/Home/Hero'
+import LatestPost from '@/components/sections/Home/LatestPost'
 import RecentProjectShowcase from '@/components/sections/Home/RecentProjectShowcase'
 import TestimonialSection from '@/components/sections/Home/TestimonialSection'
 import WhatDoWeDo from '@/components/sections/Home/WhatDoWeDo'
 import Gap from '@/components/shared/Gap'
+
 
 const page = () => {
   return (
@@ -19,8 +22,11 @@ const page = () => {
       <Gap/>
       <WhatDoWeDo/>
       <Gap/>
-      <Gap/>
       <TestimonialSection/>
+      <Gap/>
+      <ContactSection/>
+      <Gap/>
+      <LatestPost/> 
       </div>
   )
 }

@@ -17,8 +17,7 @@ const Architectural_Company = () => {
           fill
 
         />
-      </div>
-      <div className='lg:absolute left-0 top-50 lg:translate-x-3/4 lg:w-[748px] px- py-4 bg-white'>
+        <div className='hidden lg:block relatvie lg:absolute left-125 top-40  lg:w-[748px] px- py-4 bg-white'>
         <div className='px-4 space-y-4'>
           <p className="text-[14px] text-center md:text-left text-gray-500">since 1992</p>
           <h1 className='text-[32px] white-space-break lg:text-[42px] tracking-loose text-center  md:text-left font-bold'>
@@ -37,7 +36,27 @@ const Architectural_Company = () => {
           }
 
         </div>
+      </div>
+      </div>
+    <div className='lg:hidden relatvie   lg:w-[748px] px- py-4 bg-white'>
+        <div className='px-4 space-y-4'>
+          <p className="text-[14px] text-center md:text-left text-gray-500">since 1992</p>
+          <h1 className='text-[32px] white-space-break lg:text-[42px] tracking-loose text-center  md:text-left font-bold'>
+            A Creative
+            <span className='border-b'>
+              Architectural Company</span> Based in New York
+          </h1>
+        </div>
+        <div className='px-4'>
+          {
+            qualities.map((quality, index) => (
+              <div key={index} className=' text-[22px] group flex items-center items-center  md:justify-start gap-1 leading-15'>
+                <h2 className='text-[#dddddd]'>{quality.id}/</h2> <h2 className="text-[#767676] group-hover:text-primary">{quality.name}</h2>
+              </div>
+            ))
+          }
 
+        </div>
       </div>
     </div>
   )
