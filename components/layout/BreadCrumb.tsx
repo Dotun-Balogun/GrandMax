@@ -1,11 +1,11 @@
 "use client";
 
-import { FaAngleDoubleRight, FaHome } from "react-icons/fa";
+import { FaLine, FaHome } from "react-icons/fa";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const BreadCrumb = () => {
-  const pathname = usePathname();
+  const pathname = usePathname() || "/";
   const pathnames = pathname.split("/").filter((x) => x);
 
   // Custom display names for specific paths
@@ -17,7 +17,7 @@ const BreadCrumb = () => {
 
   // Get the current page name
   const currentPath = pathnames[pathnames.length - 1] || "home";
-  const pageName = pathDisplayNames[currentPath] || 
+  const pageName = pathDisplayNames[currentPath] ||
     currentPath.charAt(0).toUpperCase() + currentPath.slice(1);
 
   return (
@@ -38,7 +38,7 @@ const BreadCrumb = () => {
 
           return (
             <div key={routeTo} className="flex items-center gap-2">
-              <FaAngleDoubleRight />
+                <FaLine/>
               {isLast ? (
                 <span>{displayName}</span>
               ) : (
