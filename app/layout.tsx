@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Jost } from "next/font/google";
 import "./globals.css";
 import {metadata} from "@/lib/data/metadata";
+import BackToTop from "@/components/shared/BackToTop";
 
 export { metadata };
 
@@ -33,6 +34,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${jost.variable} antialiased`}
       >
         {children}
+        <BackToTop />
       </body>
     </html>
   );
