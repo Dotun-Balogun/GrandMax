@@ -28,7 +28,6 @@ const DynamicHero = () => {
         </div>
 
 
-{/* content */}
         
       </div>
     </div>
