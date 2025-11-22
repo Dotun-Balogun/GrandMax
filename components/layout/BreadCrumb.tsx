@@ -3,6 +3,7 @@
 import { FaLine, FaHome } from "react-icons/fa";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { getPageName } from "@/lib/getPageName";
 
 const BreadCrumb = () => {
   const pathname = usePathname() || "/";
@@ -17,14 +18,10 @@ const BreadCrumb = () => {
 
   // Get the current page name
   const currentPath = pathnames[pathnames.length - 1] || "home";
-  const pageName = pathDisplayNames[currentPath] ||
-    currentPath.charAt(0).toUpperCase() + currentPath.slice(1);
-
+//   const pageName = getPageName(pathname);
   return (
     <div className="flex items-center justify-between w-full">
-      <h1 className="text-2xl font-semibold">{pageName}</h1>
 
-      {/* Breadcrumb on the Right */}
       <div className="flex items-center text-[18px] gap-2">
         <Link href="/">
           <FaHome />
@@ -32,13 +29,12 @@ const BreadCrumb = () => {
         {pathnames.map((path, index) => {
           const routeTo = `/${pathnames.slice(0, index + 1).join("/")}`;
 
-          const displayName = pathDisplayNames[path] || 
-            path.charAt(0).toUpperCase() + path.slice(1);
+          const displayName = getPageName(routeTo);
           const isLast = index === pathnames.length - 1;
 
           return (
             <div key={routeTo} className="flex items-center gap-2">
-                <FaLine/>
+                -
               {isLast ? (
                 <span>{displayName}</span>
               ) : (
