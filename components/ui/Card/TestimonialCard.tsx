@@ -42,3 +42,5 @@ const TestimonialCard = ({image,name,role,message}:TestimonialCardProps) => {
 }
 
 export default TestimonialCard
+
+

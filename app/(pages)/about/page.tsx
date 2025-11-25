@@ -4,6 +4,8 @@ import building from '@/app/assets/images/building-1.png'
 import building_2 from '@/app/assets/images/building-2.png'
 import ClientTestimonial from './ClientTestimonial'
 import Gap from '@/components/shared/Gap'
+import OurStandards from './OurStandards'
+import FamousClients from './FamousClients'
 
 const AboutPage = () => {
   return (
@@ -68,7 +70,10 @@ const AboutPage = () => {
          </div>
 <Gap/>
            <ClientTestimonial/>
-
+<Gap/>
+<OurStandards/>
+<Gap/>
+<FamousClients/>
          </main>
   )
 }
