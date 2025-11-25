@@ -1,4 +1,3 @@
-// app/services/components/ProcessStep.tsx
 'use client';
 
 import { motion } from 'framer-motion';

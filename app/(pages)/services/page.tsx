@@ -1,14 +1,13 @@
 // app/services/page.tsx (Server Component)
 import type { Metadata } from 'next';
 import { Building2, Ruler, Home, Lightbulb, Users, Award } from 'lucide-react';
-import HeroSection from './HeroSection';
 import ServiceCard_2 from '@/components/ui/Card/ServiceCard_2';
 import ProcessStep from './ProcessStep';
 import WhyChooseCard from './WhyChooseCard';
 import CTASection from './CTASection';
-import service1 from "@/app/assets/images/secvice-1.png"
-import service2 from "@/app/assets/images/secvice-2.png";
-import service3 from "@/app/assets/images/secvice-3.png";
+import service1 from "@/app/assets/images/building-1.png"
+import service2 from "@/app/assets/images/building-2.png";
+import service3 from "@/app/assets/images/building-3.png";
 
 // Metadata for SEO
 export const metadata: Metadata = {
@@ -101,14 +100,10 @@ const whyChooseUs = [
   }
 ];
 
-// Main Server Component
 export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <HeroSection />
 
-      {/* Main Services Section */}
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="space-y-32">
@@ -123,7 +118,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Process Section */}
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -172,7 +166,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <CTASection />
     </main>
   );
