@@ -43,7 +43,7 @@ const TestimonialCard = ({image,name,role,message}:TestimonialCardProps) => {
                               height={60}
                               className=" object-cover rotate-90 absolute right-0"
                             />
-        
+        b
                         </motion.div>
   )
 }
