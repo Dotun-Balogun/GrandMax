@@ -2,6 +2,7 @@ import { Geist, Geist_Mono, Jost } from "next/font/google";
 import "./globals.css";
 import {metadata} from "@/lib/data/metadata";
 import BackToTop from "@/components/shared/BackToTop";
+import Footer from "@/components/layout/Footer";
 
 export { metadata };
 
@@ -35,6 +36,7 @@ export default function RootLayout({
       >
         {children}
         <BackToTop />
+        <Footer/>
       </body>
     </html>
   );
