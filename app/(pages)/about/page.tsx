@@ -6,6 +6,13 @@ import ClientTestimonial from './ClientTestimonial'
 import Gap from '@/components/shared/Gap'
 import OurStandards from './OurStandards'
 import FamousClients from './FamousClients'
+import { generatePageMetadata } from '@/lib/data/metadata'
+
+export const metadata = generatePageMetadata(
+  'About us',
+  'A multidisciplinary architecture firm delivering high-quality, reliable, and professional design solutions. We blend innovation and sustainable technology to create meaningful spaces that benefit clients, communities, and the environment.',
+  '/about'
+)
 
 const AboutPage = () => {
   return (

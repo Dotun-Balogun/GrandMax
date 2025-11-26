@@ -3,7 +3,14 @@
 import BlogGrid from '@/components/blog/BlogGrid';
 import BlogCarousel from '@/components/blog/BlogCarousel';
 import { blogPosts, getFeaturedPosts } from '@/lib/data/blog-data';
+import { generatePageMetadata } from '@/lib/data/metadata';
+import BreadCrumb from '@/components/layout/BreadCrumb';
 
+export const metadata= generatePageMetadata(
+  'Blog | Architectural Insights & Trends',
+  'Stay updated with the latest trends, insights, and tips in architecture and design. Explore our blog for expert articles and industry news.',
+  '/blog'
+);  
 export default function BlogPage() {
   const featuredPosts = getFeaturedPosts(3);
 
@@ -11,7 +18,10 @@ export default function BlogPage() {
     <main className="min-h-screen bg-gray-50">
       {/* Page Header */}
       <section className="bg-white border-b border-gray-200 py-12">
+
         <div className="container mx-auto px-4">
+          <BreadCrumb/>
+
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Our Blog
           </h1>

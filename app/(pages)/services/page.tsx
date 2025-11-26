@@ -8,33 +8,15 @@ import CTASection from './CTASection';
 import service1 from "@/app/assets/images/building-1.png"
 import service2 from "@/app/assets/images/building-2.png";
 import service3 from "@/app/assets/images/building-3.png";
+import { generatePageMetadata } from '@/lib/data/metadata';
 
-// Metadata for SEO
-export const metadata: Metadata = {
-  title: 'Our Services | Architectural Design & Construction',
-  description: 'Explore our comprehensive architectural services including residential design, commercial architecture, and urban planning. Award-winning designs with sustainable solutions.',
-  keywords: [
-    'architectural services',
-    'residential design',
-    'commercial architecture',
-    'urban planning',
-    'sustainable architecture',
-    'building design services',
-    'architectural consultation',
-    'master planning'
-  ],
-  openGraph: {
-    title: 'Our Services | GrandMax Architecture',
-    description: 'Explore our comprehensive architectural services including residential design, commercial architecture, and urban planning.',
-    url: 'https://grand-max.vercel.app/services',
-    images: ['/og-image.png'],
-  },
-  twitter: {
-    title: 'Our Services | GrandMax Architecture',
-    description: 'Explore our comprehensive architectural services including residential design, commercial architecture, and urban planning.',
-    images: ['/og-image.png'],
-  },
-};
+
+
+export const metadata =  generatePageMetadata(
+   'Our Services | Architectural Design & Construction',
+  'Explore our comprehensive architectural services including residential design, commercial architecture, and urban planning. Award-winning designs with sustainable solutions.',
+ '/service'
+);
 
 
 // Static data

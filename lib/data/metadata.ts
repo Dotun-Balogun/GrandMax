@@ -1,5 +1,4 @@
 // app/layout.tsx or pages/_app.tsx
-// Import this metadata configuration in your root layout
 import type { Metadata } from 'next';
 
 const siteConfig = {
@@ -58,7 +57,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
-    creator: '@grandmax', // Replace with your Twitter handle
+    creator: '@grandmax',
   },
   robots: {
     index: true,
