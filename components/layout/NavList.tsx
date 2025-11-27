@@ -68,7 +68,6 @@ const NavList = ({ isMobile = false, onLinkClick }: NavListProps) => {
     <div className={`flex ${isMobile ? 'flex-col space-y-6' : 'items-center space-x-10'}`}>
       <div className={`flex ${isMobile ? 'flex-col space-y-6' : 'items-center space-x-15'} text-secondary text-[18px] font-poppins font-medium`}>
         {menuList.map((menu) => {
-          // Fixed active link logic
           const isActive = menu.path === "/"
             ? pathname === "/"
             : menu.path !== "#" && pathname.startsWith(menu.path);
@@ -144,11 +143,15 @@ const NavList = ({ isMobile = false, onLinkClick }: NavListProps) => {
             >
               <Link 
                 href={menu.path}
-                className={`${isActive ? 'text-white  text-white lg:text-secondary':'text-secondary'} gap-1 transition-colors duration-300`}
+                className={`${isActive ? 'text-white  w-full text-white lg:text-secondary':'text-secondary'} gap-1 w-full transition-colors duration-300`}
                 onClick={handleLinkClick}
               >
                 {menu.icon && <menu.icon />}
+                <p className="w-full">
+                
                 {menu.name}
+
+                </p>
               </Link>
               {/* Animated border bottom */}
               <span 
