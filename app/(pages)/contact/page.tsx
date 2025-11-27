@@ -1,6 +1,14 @@
 import React from 'react'
 import { LeafletMap } from '@/components/LeafletMap'
 import ContactForm from '@/app/auth/ContactForm'
+import { generatePageMetadata } from '@/lib/data/metadata'
+
+export const metadata = generatePageMetadata(
+  'Contact Us - GrandMax',
+   'Get in touch with GrandMax for inquiries, support, or feedback. We are here to assist you with all your needs.',
+   '/contact'
+
+)  
 
 const ContactPage = () => {
   return (
