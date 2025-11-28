@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://grandmax.vercel.app
+Host: https://grand-max.vercel.app
 
 # Sitemaps
-Sitemap: https://grandmax.vercel.app/sitemap.xml
+Sitemap: https://grand-max.vercel.app/sitemap.xml

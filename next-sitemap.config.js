@@ -1,6 +1,6 @@
 // next-sitemap.config.js
 module.exports = {
-  siteUrl: 'https://grand-max.vercel.app',
+  siteUrl: 'https://grandmax.vercel.app',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
 }
