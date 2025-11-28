@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 
 export { metadata };
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
