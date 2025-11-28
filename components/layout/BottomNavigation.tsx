@@ -18,7 +18,7 @@ const links: NavLink[] = [
   { name: 'Contact', href: '/contact', Icon: Mail },
 ]
 
-const BottomNavigation: React.FC = () => {
+const BottomNavigation= () => {
   const pathname = usePathname()
 
   return (
