@@ -12,7 +12,7 @@ export const metadata = generatePageMetadata(
 
 const ContactPage = () => {
   return (
-    <div className="min-h-screen  text-whit">
+    <div className="min-h-screen  text-whit -z-40">
       <div className="max-w-7xl mx-auto px-4 py-12">
 
         <div className="flex flex-col md:flex-row gap-6">
