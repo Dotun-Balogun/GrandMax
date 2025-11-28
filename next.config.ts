@@ -2,11 +2,14 @@ const withPWA = require('next-pwa')({
   dest: 'public',
   register: true,
   skipWaiting: true,
-  disable: process.env.NODE_ENV === 'development', // Disable PWA in development
+  disable: process.env.NODE_ENV === 'development',
+  // Remove the aggressive runtimeCaching for now - let's use simpler defaults
 });
 
 module.exports = withPWA({
-  // Your existing Next.js config
   reactStrictMode: true,
-  turbopack:{}
+    turbopack: {},
 });
+
+
+// npm i baseline-browser-mapping@latest -D
