@@ -3,6 +3,7 @@ import "./globals.css";
 import {metadata} from "@/lib/data/metadata";
 import BackToTop from "@/components/shared/BackToTop";
 import Footer from "@/components/layout/Footer";
+import BottomNavigation from "@/components/layout/BottomNavigation";
 
 export { metadata };
 
@@ -33,11 +34,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${jost.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${jost.variable} relative antialiased`}
       >
         {children}
         <BackToTop />
         <Footer/>
+        <BottomNavigation/>
       </body>
     </html>
   );
