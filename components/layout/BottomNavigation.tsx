@@ -22,7 +22,7 @@ const BottomNavigation= () => {
   const pathname = usePathname()
 
   return (
-    <nav className="z-30 fixed bottom-0 left-0 lg:hidden w-full h-[82px] grid grid-cols-4 bg-secondary border-t border-gray-200">
+    <nav className="z-50 fixed bottom-0 left-0 lg:hidden w-full h-[82px] grid grid-cols-4 bg-secondary border-t border-gray-200">
       {links.map(({ name, href, Icon }) => {
         const active = pathname === href
 
