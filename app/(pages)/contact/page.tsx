@@ -24,7 +24,7 @@ const ContactPage = () => {
           </div>
 
           {/* Map */}
-          <div className="md:w-1/2 rounded-lg overflow-hidden h-72 md:h-auto">
+          <div className="md:w-1/2 rounded-lg overflow-hidden -z-50 h-72 md:h-auto">
             <LeafletMap lat={6.5244} lng={3.3792} zoom={12} />
           </div>
         </div>
