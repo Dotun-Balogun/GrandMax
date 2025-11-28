@@ -4,6 +4,7 @@ import {metadata} from "@/lib/data/metadata";
 import BackToTop from "@/components/shared/BackToTop";
 import Footer from "@/components/layout/Footer";
 import BottomNavigation from "@/components/layout/BottomNavigation";
+import PWAInstallBanner from "@/components/PWAInstallBanner";
 
 export { metadata };
 
@@ -37,6 +38,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${jost.variable} relative antialiased`}
       >
         {children}
+        <PWAInstallBanner/>
         <BackToTop />
         <Footer/>
         <BottomNavigation/>
