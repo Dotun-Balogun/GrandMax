@@ -12,4 +12,4 @@ module.exports = withPWA({
 });
 
 
-// npm i baseline-browser-mapping@latest -D
+// npm i baseline-browser-map

@@ -8,7 +8,6 @@ import PWAInstallBanner from "@/components/PWAInstallBanner";
 
 export { metadata };
 
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -38,6 +37,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${jost.variable} relative antialiased`}
       >
         {children}
+        
         <PWAInstallBanner/>
         <BackToTop />
         <Footer/>
