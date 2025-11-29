@@ -76,7 +76,7 @@ export default function ContactForm() {
               required: 'Name is required',
               minLength: { value: 2, message: 'Name must be at least 2 characters' }
             })}
-            className={`w-full border-b-2 ${
+            className={`text-white w-full border-b-2 ${
               errors.name ? 'border-red-500' : 'border-gray-300'
             } focus:border-red-500 outline-none py-2 transition-colors`}
           />
@@ -100,7 +100,7 @@ export default function ContactForm() {
                 message: 'Invalid email address'
               }
             })}
-            className={`w-full border-b-2 ${
+            className={`w-full text-white  border-b-2 ${
               errors.email ? 'border-red-500' : 'border-gray-300'
             } focus:border-red-500 outline-none py-2 transition-colors`}
           />
