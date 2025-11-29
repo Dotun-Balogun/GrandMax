@@ -1,8 +1,7 @@
-// components/blog/BlogDetail.tsx
-
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { BlogPost } from '@/lib/types/blog';
 import BlogCategory from './BlogCategory';
 import { Calendar, Clock, User, ArrowLeft } from 'lucide-react';
@@ -28,12 +27,20 @@ const BlogDetail: React.FC<BlogDetailProps> = ({ post }) => {
 
       {/* Hero Section */}
       <div className="relative h-[400px] md:h-[500px] bg-gray-900 overflow-hidden">
+        {/* Featured Image */}
+        {post.featuredImage && (
+          <Image
+            src={post.featuredImage}
+            alt={post.title}
+            fill
+            className="object-cover"
+            priority
+          />
+        )}
+
+        {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70" />
-        {/* Placeholder for featured image */}
-        <div className="absolute inset-0 flex items-center justify-center text-white/30">
-          <span>Featured Image</span>
-        </div>
-        
+
         {/* Hero Content */}
         <div className="relative h-full flex items-end">
           <div className="container mx-auto px-4 pb-12">
@@ -102,9 +109,19 @@ const BlogDetail: React.FC<BlogDetailProps> = ({ post }) => {
             {/* Author Section */}
             <div className="mt-12 pt-8 border-t border-gray-200">
               <div className="flex items-center gap-4">
-                <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center">
-                  <User className="w-8 h-8 text-gray-400" />
-                </div>
+                {post.author.avatar ? (
+                  <Image
+                    src={post.author.avatar}
+                    alt={post.author.name}
+                    width={64}
+                    height={64}
+                    className="rounded-full object-cover"
+                  />
+                ) : (
+                  <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center">
+                    <User className="w-8 h-8 text-gray-400" />
+                  </div>
+                )}
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900">
                     {post.author.name}

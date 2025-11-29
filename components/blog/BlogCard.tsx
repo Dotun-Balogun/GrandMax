@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { BlogPost } from '@/lib/types/blog';
 import BlogCategory from './BlogCategory';
 import { ArrowRight } from 'lucide-react';
+import Image from 'next/image'
 
 interface BlogCardProps {
   post: BlogPost;
@@ -19,10 +20,19 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, variant = 'default' }) => {
       {/* Featured Image */}
       <div className="relative h-64 overflow-hidden bg-gray-200">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/10 group-hover:to-black/20 transition-all duration-300" />
-        {/* Placeholder for image - replace with Next.js Image component */}
-        <div className="w-full h-full flex items-center justify-center text-gray-400">
-          <span className="text-sm">Featured Image</span>
-        </div>
+        {post.featuredImage ? (
+          <Image
+        src={post.featuredImage}
+        alt={post.title ?? 'Featured image'}
+        fill
+        sizes="(max-width: 768px) 100vw, 50vw"
+        className="object-cover"
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center text-gray-400">
+        <span className="text-sm">Featured Image</span>
+          </div>
+        )}
       </div>
 
       {/* Content */}
