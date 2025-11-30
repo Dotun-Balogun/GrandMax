@@ -50,7 +50,7 @@ const Header = () => {
           </Button>
 
           <ConsultationModal open={openModal} onClose={() => setOpenModal(false)}>
-                 <ContactForm/>
+                 <ContactForm theme='dark'/>
           </ConsultationModal>
         </div>
         
