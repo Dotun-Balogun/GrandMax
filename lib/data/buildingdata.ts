@@ -54,7 +54,7 @@ export const buildingData = [
 
 
 
-export const generateProjectMetadata = async (projectId: string) => {
+export const generateMetadata = async (projectId: string) => {
   const project = buildingData.find((p) => p.id === projectId);
 
   if (!project) {

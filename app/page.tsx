@@ -8,7 +8,7 @@ import TestimonialSection from '@/components/sections/Home/TestimonialSection'
 import WhatDoWeDo from '@/components/sections/Home/WhatDoWeDo'
 import Gap from '@/components/shared/Gap'
 
-
+ 
 const page = () => {
   return (
     <div className=' '>
