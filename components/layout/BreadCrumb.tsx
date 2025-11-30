@@ -14,6 +14,7 @@ const BreadCrumb = () => {
     // "faqs": "Frequently Asked Questions",
     "about": "About",
     "contact-us": "Contact Us",
+    "buildingProjects": "Building Projects",
   };
 
   // Get the current page name
