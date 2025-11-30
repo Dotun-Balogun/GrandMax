@@ -10,9 +10,9 @@ const WhatDoWeDo = () => {
     <div className='w-full'>
       <div className="max-w-7xl mx-auto px-4">
         <div className=' space-y-2'>
-          <p className="text-[14px] text-center md:text-left text-gray-500">WHAT DO WE DO HERE</p>
+          <p className="text-[14px] text-center md:text-left text-gray-500">WHAT DO WE DO HERE ?</p>
           <h1 className='text-[32px] white-space-break lg:text-[42px] tracking-loose text-center  md:text-left font-bold'>
-            what  make us
+            what  make us ?
 
           </h1>
         </div>
