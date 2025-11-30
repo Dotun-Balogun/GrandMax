@@ -35,7 +35,7 @@ const RecentProjectShowcase = () => {
                         fill
 
                     />
-                    <h1 className=' w-full absolute -top-6  p-4 left-1/2 -translate-x-1/2 border-b hover:text-primary border-b-secondary  font-bold text-[20px] md:text-[38px]'>Dejavu Building</h1>
+                    <h1 className=' w-full absolute -top-6  p-4 left-1/2 -translate-x-1/2 border-b hover:text-primary border-b-secondary  text-center font-bold text-[20px] md:text-[38px]'>Dejavu Building</h1>
                     <div className='absolute w-full bottom-0 md:left-50 py-2  md:right-0 hidden md:flex flex-col md:flex-row justify-evenly items-center bg-white max-h-[110px] z-10 '>
                         <div className='flex flex-col items-center  gap-1 h-full'>
                             <h2 className='text-[#767676] text-[12px]'>Category</h2>
