@@ -26,7 +26,7 @@ const BlogCarousel: React.FC<BlogCarouselProps> = ({
 }) => {
   return (
     <section className="w-full py-12 bg-gray-50">
-      <div className="container mx-auto  lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-8 text-center md:text-left">
           {title && (
@@ -42,7 +42,7 @@ const BlogCarousel: React.FC<BlogCarouselProps> = ({
         </div>
 
         {/* Carousel */}
-        <div className="relative px-8 sm:px-10 md:px-12 lg:px-4">
+        <div className="relative">
           <Carousel
             opts={{
               align: 'start',
@@ -61,13 +61,13 @@ const BlogCarousel: React.FC<BlogCarouselProps> = ({
               ))}
             </CarouselContent>
             
-            {/* Mobile & Desktop Navigation Buttons */}
+            {/* Navigation Buttons - Positioned Outside on Desktop, Overlay on Mobile */}
             <CarouselPrevious 
-              className="absolute -left-2 sm:-left-4 md:-left-8 lg:-left-12 top-1/2 -translate-y-1/2 h-10 w-10 sm:h-12 sm:w-12 bg-white hover:bg-gray-100 shadow-lg border-2 border-gray-200 disabled:opacity-50"
+              className="absolute left-0 sm:-left-4 lg:-left-12 top-1/2 -translate-y-1/2 -translate-x-1/2 sm:translate-x-0 h-9 w-9 sm:h-10 sm:w-10 md:h-12 md:w-12 bg-white hover:bg-gray-100 shadow-xl border border-gray-200 disabled:opacity-30 z-10"
               aria-label="Previous slide"
             />
             <CarouselNext 
-              className="absolute -right-2 sm:-right-4 md:-right-8 lg:-right-12 top-1/2 -translate-y-1/2 h-10 w-10 sm:h-12 sm:w-12 bg-white hover:bg-gray-100 shadow-lg border-2 border-gray-200 disabled:opacity-50"
+              className="absolute right-0 sm:-right-4 lg:-right-12 top-1/2 -translate-y-1/2 translate-x-1/2 sm:translate-x-0 h-9 w-9 sm:h-10 sm:w-10 md:h-12 md:w-12 bg-white hover:bg-gray-100 shadow-xl border border-gray-200 disabled:opacity-30 z-10"
               aria-label="Next slide"
             />
           </Carousel>
