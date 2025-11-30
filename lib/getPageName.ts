@@ -4,6 +4,7 @@ export const getPageName = (pathname: string) => {
   const pathDisplayNames: Record<string, string> = {
     about: "About",
     "contact-us": "Contact Us",
+    buildingProjects: "Building Projects",
   };
 
   const currentPath = pathnames[pathnames.length - 1] || "home";
