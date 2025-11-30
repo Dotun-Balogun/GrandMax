@@ -14,7 +14,7 @@ import bakcground from '@/app/assets/images/row-bg-1.jpg'
 
 const TestimonialSection = () => {
   return (
-    <section className=" relative w-full mt-100  lg:mt-0 ">*+
+    <section className=" relative w-full mt-100  lg:mt-0 ">
         
        <section className="absolute left-1/2  bottom-20 -translate-x-1/2 w-full flex flex-col lg:flex-row lg:px-10 z-10" >
       {/* LEFT RED SECTION */}
