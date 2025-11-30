@@ -46,7 +46,7 @@ const Architectural_Company = () => {
   <span className='border-b'>
     Architectural Company
   </span>{" "}
-  Based in New York
+  Based in New York 
 </h1>
 
         </div>
