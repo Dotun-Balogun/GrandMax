@@ -11,7 +11,18 @@ interface FormData {
   question: string;
 }
 
-export default function ContactForm() {
+export default function ContactForm({
+  theme = "light", // <-- added theme prop (light = white text, dark = black text)
+}: {
+  theme?: "light" | "dark";
+}) {
+
+  // ---- DYNAMIC TEXT COLORS (added, does NOT remove your code) ----
+  const labelColor = theme === "light" ? "text-white" : "text-black";
+  const inputColor = theme === "light" ? "text-white" : "text-black";
+  const selectBg = theme === "light" ? "bg-transparent" : "bg-white";
+  // ---------------------------------------------------------------
+
   const {
     register,
     handleSubmit,
@@ -38,7 +49,6 @@ export default function ContactForm() {
       toast.success('Message sent successfully!', {
         description: "We'll get back to you as soon as possible.",
         duration: 5000,
-        
       });
       
       // Reset form after successful submission
@@ -64,9 +74,10 @@ export default function ContactForm() {
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
         {/* Name Field */}
         <div>
-          <label htmlFor="name" className="block text-sm text-gray-700 mb-2">
+          <label htmlFor="name" className={`block text-sm mb-2 ${labelColor}`}>
             Your Name (*)
           </label>
           <input
@@ -76,7 +87,7 @@ export default function ContactForm() {
               required: 'Name is required',
               minLength: { value: 2, message: 'Name must be at least 2 characters' }
             })}
-            className={`text-white w-full border-b-2 ${
+            className={`w-full border-b-2 ${inputColor} ${
               errors.name ? 'border-red-500' : 'border-gray-300'
             } focus:border-red-500 outline-none py-2 transition-colors`}
           />
@@ -87,7 +98,7 @@ export default function ContactForm() {
 
         {/* Email Field */}
         <div>
-          <label htmlFor="email" className="block text-sm text-gray-700 mb-2">
+          <label htmlFor="email" className={`block text-sm mb-2 ${labelColor}`}>
             Your Email (*)
           </label>
           <input
@@ -100,7 +111,7 @@ export default function ContactForm() {
                 message: 'Invalid email address'
               }
             })}
-            className={`w-full text-white  border-b-2 ${
+            className={`w-full border-b-2 ${inputColor} ${
               errors.email ? 'border-red-500' : 'border-gray-300'
             } focus:border-red-500 outline-none py-2 transition-colors`}
           />
@@ -112,37 +123,37 @@ export default function ContactForm() {
 
       {/* Subject Field */}
       <div>
-        <label htmlFor="subject" className="block text-sm text-gray-700 mb-2">
+        <label htmlFor="subject" className={`block text-sm mb-2 ${labelColor}`}>
           Subject
         </label>
         <input
           type="text"
           id="subject"
           {...register('subject')}
-          className="w-full border-b-2 text-white border-gray-300 focus:border-red-500 outline-none py-2 transition-colors"
+          className={`w-full border-b-2 border-gray-300 focus:border-red-500 outline-none py-2 transition-colors ${inputColor}`}
         />
       </div>
 
       {/* Department Field */}
       <div>
-        <label htmlFor="department" className="block text-sm text-gray-700 mb-2">
+        <label htmlFor="department" className={`block text-sm mb-2 ${labelColor}`}>
           Department
         </label>
         <select
           id="department"
           {...register('department')}
-          className="w-full border-b-2 border-gray-300 focus:border-red-500 outline-none py-2 bg-white transition-colors"
+          className={`w-full border-b-2 border-gray-300 focus:border-red-500 outline-none py-2 transition-colors ${selectBg} ${inputColor}`}
         >
-          <option>Business Department</option>
-          <option>Design Department</option>
-          <option>Project Management</option>
-          <option>Customer Service</option>
+          <option className="text-black">Business Department</option>
+          <option className="text-black">Design Department</option>
+          <option className="text-black">Project Management</option>
+          <option className="text-black">Customer Service</option>
         </select>
       </div>
 
       {/* Question Field */}
       <div>
-        <label htmlFor="question" className="block text-sm text-gray-700 mb-2">
+        <label htmlFor="question" className={`block text-sm mb-2 ${labelColor}`}>
           Your Question
         </label>
         <textarea
@@ -152,9 +163,9 @@ export default function ContactForm() {
             required: 'Please enter your question',
             minLength: { value: 10, message: 'Question must be at least 10 characters' }
           })}
-          className={`w-full border-b-2  text-white ${
+          className={`w-full border-b-2 resize-none focus:border-red-500 outline-none py-2 transition-colors ${inputColor} ${
             errors.question ? 'border-red-500' : 'border-gray-300'
-          } focus:border-red-500 outline-none py-2 resize-none transition-colors`}
+          }`}
         />
         {errors.question && (
           <p className="text-red-500 text-xs mt-1">{errors.question.message}</p>
