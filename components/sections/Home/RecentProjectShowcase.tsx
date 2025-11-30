@@ -7,13 +7,16 @@ const RecentProjectShowcase = () => {
         <section className='container px-4 mx-auto'>
             <div className='px-4 space-y-2 max-w-2xl'>
                 <p className="text-[14px] text-center md:text-left text-gray-500">Our Project</p>
-                <h1 className='text-[32px] lg:text-[42px] tracking-loose text-center  md:text-left font-bold'>
-                    A  <span className='border-b border-secondary' >
-                        Show case
-                    </span>of Our
-                    <span className='border-b border-secondary'>
-                        Recent Project</span>
-                </h1>
+                <h1 className='text-[32px] lg:text-[42px] tracking-loose text-center md:text-left font-bold'>
+  A{" "}
+  <span className='border-b border-secondary'>
+    Show case
+  </span>{" "}
+  of Our{" "}
+  <span className='border-b border-secondary'>
+    Recent Project
+  </span>
+</h1>
 
                 <p className="text-[#666666] text-[18px] leading-8 text-center md:text-left">
                     We look with care and attention at all elements,
