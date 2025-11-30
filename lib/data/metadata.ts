@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     telephone: false,
   },
   other:{
-    // "google-site-verification":" google10b0f373e08095c8.html",
+    "google-site-verification":"sgqRyMC0zaQeAUzTwbHgoLiebrL120sUQNJaEwj6Chg",
   },
   openGraph: {
     type: 'website',
