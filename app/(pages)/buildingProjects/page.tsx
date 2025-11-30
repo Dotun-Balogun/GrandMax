@@ -16,7 +16,6 @@ const Page = () => {
       <div className="px-4 space-y-6">
 
         <div className="flex justify-between items-center">
-          <BreadCrumb />
         </div>
 
         <h1 className="text-[32px] lg:text-[42px] font-bold tracking-tight text-center md:text-left leading-tight">
