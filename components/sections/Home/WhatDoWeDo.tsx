@@ -28,12 +28,12 @@ const WhatDoWeDo = () => {
           <div className="lg:max-w-[674px] flex flex-col  items-center md:items-start md:justify-start text-center md:text-left space-y-8 mx-auto px-4 text-[18px] py-10 text-[#ffffff] md:py-20 md:mx-0 md:px-10 lg:max-w-3xl">
             <p>
               Known for creating current, iconic, must–experience spaces,
-               Pinnacle Architect has been innovating hospitality design
+               Grandmax Architecture has been innovating hospitality design
                 for luxury and boutique brands for nearly 50 years. 
             </p>
             <p>
               Today, 
-                Pinnacle Architect offers an even broader range of design 
+                Grandmax Architecture offers an even broader range of design 
                 services and specialty studios to meet clients’ needs in 
                 the ever-evolving hospitality industry.
             </p>
