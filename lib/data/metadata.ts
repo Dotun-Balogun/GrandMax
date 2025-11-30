@@ -36,6 +36,9 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  other:{
+    // "google-site-verification":" google10b0f373e08095c8.html",
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
