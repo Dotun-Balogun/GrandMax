@@ -41,7 +41,6 @@ export default function ServiceCard_2({ service, index }: ServiceCardProps) {
             alt={service.title}
             className="w-full h-[400px] object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
         </motion.div>
       </div>
 
