@@ -15,9 +15,12 @@ import {
 import { useState } from 'react'
 import Link from 'next/link'
 import { RiMenu5Fill } from "react-icons/ri";
+import ConsultationModal from '../ui/modals/ConsultationModal'
+import ContactForm from '@/app/auth/ContactForm'
 
 const Header = () => {
    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+   const [openModal, setOpenModal] = useState(false)
 
   const handleCloseMobileMenu = () => {
     setMobileMenuOpen(false);
@@ -40,9 +43,15 @@ const Header = () => {
           <NavList  onLinkClick={handleCloseMobileMenu} />   
            
         </div>
-          <Button className="px-6 text-secondary h-[60px] text-base  rounded-none hover:text-white hover:bg-secondary transition-colors">
+          <Button 
+          onClick={()=>{setOpenModal(true)  }}
+          className="px-6 text-secondary h-[60px] text-base  rounded-none hover:text-white hover:bg-secondary transition-colors">
             Free Consultation
           </Button>
+
+          <ConsultationModal open={openModal} onClose={() => setOpenModal(false)}>
+                 <ContactForm/>
+          </ConsultationModal>
         </div>
         
 <div className="lg:hidden px-4">

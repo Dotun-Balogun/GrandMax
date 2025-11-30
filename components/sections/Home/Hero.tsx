@@ -22,7 +22,12 @@ const Hero = () => {
   ]
   
   // autoplay plugin
-  const plugin = Autoplay({ delay: 4000, stopOnInteraction: false })
+  const plugin = Autoplay({ delay: 4000,
+    stopOnInteraction: true,
+  stopOnMouseEnter: true,
+  stopOnFocusIn: true,
+  
+      })
   
   // Watch for slide changes
   useEffect(() => {
