@@ -13,7 +13,7 @@ type NavLink = {
 
 const links: NavLink[] = [
   { name: 'Home', href: '/', Icon: Home },
-  { name: 'Projects', href: '/projects', Icon: Layers },
+  { name: 'Projects', href: '/buildingProjects', Icon: Layers },
   { name: 'Services', href: '/services', Icon: LucideBuilding },
   { name: 'Contact', href: '/contact', Icon: Mail },
 ]
