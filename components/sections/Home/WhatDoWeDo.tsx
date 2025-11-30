@@ -25,7 +25,7 @@ const WhatDoWeDo = () => {
             Different</h1>
         </div>
         <div className="flex flex-col md:flex-row">
-          <div className="max-w-[674px] flex flex-col  items-center md:items-start md:justify-start text-center md:text-left space-y-8 mx-auto px-4 text-[18px] py-10 text-[#ffffff] md:py-20 md:mx-0 md:px-10 lg:max-w-3xl">
+          <div className="lg:max-w-[674px] flex flex-col  items-center md:items-start md:justify-start text-center md:text-left space-y-8 mx-auto px-4 text-[18px] py-10 text-[#ffffff] md:py-20 md:mx-0 md:px-10 lg:max-w-3xl">
             <p>
               Known for creating current, iconic, must–experience spaces,
                Pinnacle Architect has been innovating hospitality design
