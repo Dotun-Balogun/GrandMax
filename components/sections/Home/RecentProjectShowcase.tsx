@@ -6,7 +6,7 @@ const RecentProjectShowcase = () => {
     return (
         <section className='container px-4 mx-auto'>
             <div className='px-4 space-y-2 max-w-2xl'>
-                <p className="text-[14px] text-center md:text-left text-gray-500">Our Project</p>
+                <p className="text-[14px] text-center md:text-left text-gray-500">OUR PROJECCTS</p>
                 <h1 className='text-[32px] lg:text-[42px] tracking-loose text-center md:text-left font-bold'>
   A{" "}
   <span className='border-b border-secondary'>
