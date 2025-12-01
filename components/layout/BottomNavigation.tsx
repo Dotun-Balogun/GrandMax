@@ -35,7 +35,7 @@ const BottomNavigation= () => {
               active ? 'text-white' : 'text-gray-400 hover:text-white'
             }`}
           >
-            <Icon className={`w-6 h-6 ${active ? 'text-white' : 'text-gray-400'}`} />
+            <Icon className={`w-6 h-6 ${active ? 'text-primary  ' : 'text-gray-400'}`} />
             <span className="text-xs font-medium">{name}</span>
           </Link>
         )
