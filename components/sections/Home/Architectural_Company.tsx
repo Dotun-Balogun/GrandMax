@@ -29,7 +29,7 @@ const Architectural_Company = () => {
         <div className='px-4'>
           {
             qualities.map((quality, index) => (
-              <div key={index} className=' text-[22px] group flex items-center items-center  md:justify-start gap-1 leading-15'>
+              <div key={index} className=' text-[22px] group , flex items-center items-center  md:justify-start gap-1 leading-15'>
                 <h2 className='text-[#dddddd]'>{quality.id}/</h2> <h2 className="text-[#767676] group-hover:text-primary">{quality.name}</h2>
               </div>
             ))
@@ -40,7 +40,7 @@ const Architectural_Company = () => {
       </div>
     <div className='lg:hidden relatvie   lg:w-[748px] px- py-4 bg-white'>
         <div className='px-4 space-y-4'>
-          <p className="text-[14px] text-center md:text-left text-gray-500">since 1992</p>
+          <p className="text-[14px] text-center md:text-left text-gray-500">SINCE 1992</p>
           <h1 className='text-[32px] whitespace-normal lg:text-[42px] tracking-loose text-center md:text-left font-bold'>
   A Creative{" "}
   <span className='border-b'>
