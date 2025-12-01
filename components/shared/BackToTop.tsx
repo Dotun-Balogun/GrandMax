@@ -23,7 +23,7 @@ const BackToTop = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className='fixed bottom-24 p-2  right-6 w-4 h-4  md:w-10 md:h-10 z-80 flex items-center justify-center 
+          className='fixed bottom-24 p-2  right-6 w-6 h-6  md:w-10 md:h-10 z-80 flex items-center justify-center 
                      bg-primary text-white  shadow-lg hover:bg-primary/80 
                      transition duration-300'
         >
